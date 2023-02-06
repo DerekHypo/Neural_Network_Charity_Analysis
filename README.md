@@ -21,6 +21,14 @@ The two variables of EIN and NAME. Each variable was dropped from our data set.
 
 # Compiling, Training, and Evaluating the Model
 * How many neurons, layers, and activation functions did you select for your neural network model, and why?
+This deep-learning neural network model is made of two hidden layers with 80 and 30 neurons. The input data has 43 features and 25,724 samples.
+The output layer is made of a unique neuron as it is a binary classification.
+To speed up the training process, I used the activation function ReLU for the hidden layers. As our output is a binary classification, Sigmoid is used on the output layer. For the compilation, the optimizer is adam and the loss function is binary_crossentropy.
+
 * Were you able to achieve the target model performance?
+The model accuracy is under 75%. This is not a satisfying performance to help predict the outcome of the charity donations.
+
 * What steps did you take to try and increase model performance?
+To increase the performance of the model, I applied bucketing to the feature ASK_AMT and organized the different values by intervals, increased the number of neurons on one of the hidden layers and used a model with three hidden layers, and tried a different activation function (tanh). None of these steps improve the model's overall performance.
+
 # Summary
