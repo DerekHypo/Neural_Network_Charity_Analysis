@@ -32,3 +32,6 @@ The model accuracy is under 75%. This is not a satisfying performance to help pr
 To increase the performance of the model, I applied bucketing to the feature ASK_AMT and organized the different values by intervals, increased the number of neurons on one of the hidden layers and used a model with three hidden layers, and tried a different activation function (tanh). None of these steps improve the model's overall performance.
 
 # Summary
+
+The deep learning neural network model didn’t reach the preferred target of 75% accuracy. We did not see any significant change despite adding additional layers, adding neurons, changing activation functions, and adjusting the number of epochs.
+Because we are in a binary classification situation, we could use a supervised machine learning model such as the Random Forest Classifier to combine a multitude of decision trees to generate a classified output and evaluate its performance against our deep learning model.
